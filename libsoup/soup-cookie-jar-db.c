@@ -13,7 +13,12 @@
 
 #include <stdlib.h>
 
+// using the "sqlite3sym.h" in OHOS
+#ifndef USE_SQLITE_SYMBOLS
 #include <sqlite3.h>
+#else
+#include <sqlite3sym.h>
+#endif
 
 #include "soup-cookie-jar-db.h"
 #include "soup.h"
