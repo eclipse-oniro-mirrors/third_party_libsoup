@@ -14,7 +14,7 @@
 [
     {
         "Name": "libsoup",
-        "License": "GNU LIBRARY GENERAL PUBLIC LICENSE Version 2",
+        "License": "LGPL V2.0",
         "License File": "COPYING",
         "Owner": "lixin113@huawei.com",
         "Version Number": "2.71.0",
