@@ -40,7 +40,6 @@ ohos_source_set("soup_dynamic") {
     "//third_party/libsoup/libsoup/soup-cache-client-input-stream.c",
     "//third_party/libsoup/libsoup/soup-cache-input-stream.c",
 
-    #"//third_party/libsoup/libsoup/soup-brotli-decompressor.c",
     "//third_party/libsoup/libsoup/soup-cache.c",
     "//third_party/libsoup/libsoup/soup-client-input-stream.c",
     "//third_party/libsoup/libsoup/soup-connection-auth.c",
