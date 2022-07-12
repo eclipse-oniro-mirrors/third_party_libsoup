@@ -20,6 +20,7 @@ config("libsoup_config") {
     "-DG_LOG_DOMAIN=\"libsoup\"",
     "-DLIBSOUP_COMPILATION",
     "-Wno-sign-compare",
+    "-Wno-pragma-messages",
     "-DOHOS_GLIB_COMPATIBLE",
   ]
 }
