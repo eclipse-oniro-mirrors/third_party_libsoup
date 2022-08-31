@@ -133,7 +133,7 @@ ohos_source_set("soup_dynamic") {
 ohos_shared_library("libohossoup") {
   deps = [
     ":soup_dynamic",
-    "//third_party/gettext:libintl",
+    "//third_party/gettext:libgettext",
     "//third_party/glib:gio",
     "//third_party/glib:glib",
     "//third_party/glib:gobject",
