@@ -638,8 +638,14 @@ sniff_feed_or_html (SoupContentSniffer *sniffer, SoupBuffer *buffer)
 		goto text_html;
 
 	/* Skip a leading UTF-8 BOM */
+	// x86_64 -Wtautological-constant-out-of-range-compare
+#ifdef OHOS_OPT_COMPAT
+	if (resource[0] == (char)0xEF && resource[1] == (char)0xBB && resource[2] == (char)0xBF)
+		pos = 3;
+#else 
 	if (resource[0] == 0xEF && resource[1] == 0xBB && resource[2] == 0xBF)
 		pos = 3;
+#endif
 
  look_for_tag:
 	if (pos > resource_length)
