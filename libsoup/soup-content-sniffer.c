@@ -638,7 +638,7 @@ sniff_feed_or_html (SoupContentSniffer *sniffer, SoupBuffer *buffer)
 		goto text_html;
 
 	/* Skip a leading UTF-8 BOM */
-	// x86_64 -Wtautological-constant-out-of-range-compare
+	// ohos.opt.compat.2001 x86_64 -Wtautological-constant-out-of-range-compare
 #ifdef OHOS_OPT_COMPAT
 	if (resource[0] == (char)0xEF && resource[1] == (char)0xBB && resource[2] == (char)0xBF)
 		pos = 3;
