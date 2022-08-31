@@ -142,6 +142,6 @@ ohos_shared_library("libohossoup") {
     "//third_party/sqlite:sqlite",
     "//third_party/zlib:libz",
   ]
-  part_name = "multimedia_player_framework"
-  subsystem_name = "multimedia"
+  part_name = "libsoup"
+  subsystem_name = "thirdparty"
 }
