@@ -22,7 +22,7 @@ config("libsoup_config") {
     "-Wno-sign-compare",
     "-Wno-#pragma-messages",
     "-DOHOS_GLIB_COMPATIBLE",
-    "-DOHOS_OPT_COMPAT",
+    "-fno-signed-char",
   ]
 }
 
